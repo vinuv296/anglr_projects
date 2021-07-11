@@ -1,0 +1,30 @@
+<form>
+    <div class="container">
+        <div class="row">
+           <form (ngSubmit)="deposite()">
+                <div class="col-lg-4 col-sm-12 main">
+                    <h2>Deposit Transaction</h2><hr>
+                    
+                    <input type="text" class="items" name="anum" [(ngModel)]="acnum1" id="accountnumber" placeholder="Confirm Account Number"><br>
+                    <input type="text" class="items" name="pwd" [(ngModel)]="pwd1" id="pwd" placeholder="Password"><br>
+                    <input type="text" class="items" name="amt" [(ngModel)]="amt1" id="Amt" placeholder="Amount"><br>
+                    <button class="item">Deposite</button>
+    
+                </div>
+
+            </form>
+            <form (ngSubmit)="withdraw()">
+            <div class="col-lg-4 col-sm-12 main">
+                <h2>withdraw Transaction</h2><hr>
+                   
+                    <input type="text" class="items" name="anum1" [(ngModel)]="acnum2" id="acnumber" placeholder="Confirm Account Number"><br>
+                    <input type="text" class="items" name="pwd2" [(ngModel)]="pwd2" id="pwd2" placeholder="Password"><br>
+                    <input type="text" class="items" name="amt1" [(ngModel)]="amt2" id="Amnt" placeholder="Amount"><br>
+                <button class="item">withdraw</button>
+              
+            </div>
+        </form>
+            <div class="col-lg-4 col-sm-12"><h1><br><p>Luminar Bank</p></h1></div>
+        </div>
+    </div>
+
